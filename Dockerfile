@@ -1,5 +1,5 @@
 FROM jenkins/jenkins:lts-jdk17
 USER root
 RUN apt-get update && apt install docker.io -y
-USER jenkins
+USER root
 RUN dockerd
